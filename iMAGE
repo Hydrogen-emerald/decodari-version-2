@@ -1,0 +1,6 @@
+decodari/
+├── index.html
+├── style.css
+├── script.js
+└── images/
+    └── logo.png   ← votre logo ici

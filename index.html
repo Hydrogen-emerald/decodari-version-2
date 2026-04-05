@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Decodari – Fabrication de coussins et mousses pour salons marocains. Qualité artisanale, prix compétitifs, livraison rapide." />
+  <meta name="keywords" content="coussin salon marocain, mousse sur mesure, sedari, rembourrage, oreiller, Decodari" />
+  <title>Decodari – Le confort sur mesure pour votre intérieur</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER / NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header id="header">
+    <div class="header-inner container">
+
+      <!-- LOGO — remplacez le SVG par votre logo -->
+      <a href="#accueil" class="logo" aria-label="Decodari – Accueil">
+        <!-- ▼ LOGO : remplacez ce SVG par <img src="votre-logo.png" alt="Decodari" /> -->
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="44" height="44" rx="4" fill="#C41E3A"/>
+          <path d="M9 10h10c7.18 0 13 5.82 13 13s-5.82 13-13 13H9V10z" fill="white" opacity="0.9"/>
+          <circle cx="19" cy="23" r="5" fill="#C41E3A"/>
+          <rect x="28" y="14" width="7" height="18" rx="2" fill="white" opacity="0.9"/>
+        </svg>
+        <span class="logo-text">Decodari</span>
+      </a>
+
+      <!-- NAV DESKTOP -->
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#services">Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- CTA HEADER -->
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta">Devis gratuit</a>
+
+      <!-- BURGER MOBILE -->
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Navigation mobile">
+      <a href="#accueil">Accueil</a>
+      <a href="#produits">Produits</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Devis gratuit</a>
+    </nav>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO / ACCUEIL
+  ═══════════════════════════════════════════ -->
+  <section id="accueil" class="hero">
+    <!-- Pattern marocain décoratif -->
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal">✦ Fabrication belgique · Bruxelles</div>
+      <h1 class="hero-title reveal">
+        Le confort <em>sur mesure</em><br/>pour votre intérieur
+      </h1>
+      <p class="hero-subtitle reveal">
+        Coussins, mousses et oreillers de qualité artisanale.<br/>
+        Spécialiste du salon marocain
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-envelope"></i> Demander un devis
+        </a>
+        <a href="#produits" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-grid-2"></i> Voir les produits
+        </a>
+      </div>
+
+      <!-- Statistiques -->
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Ans d'expertise</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span class="stat-unit">+</span>
+          <span class="stat-label">Clients satisfaits</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">Fait en belgique</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span></span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       BANDEAU CONFIANCE
+  ═══════════════════════════════════════════ -->
+  <section class="trust-band" aria-label="Nos garanties">
+    <div class="container trust-grid">
+      <div class="trust-item reveal">
+        <i class="fa-solid fa-award"></i>
+        <div>
+          <strong>Qualité garantie</strong>
+          <span>Matériaux haute densité</span>
+        </div>
+      </div>
+      <div class="trust-item reveal">
+        <i class="fa-solid fa-scissors"></i>
+        <div>
+          <strong>Sur mesure</strong>
+          <span>Découpe à vos dimensions</span>
+        </div>
+      </div>
+      <div class="trust-item reveal">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+          <strong>Livraison rapide</strong>
+          <span>3 à 5 jours ouvrés</span>
+        </div>
+      </div>
+      <div class="trust-item reveal">
+        <i class="fa-solid fa-tags"></i>
+        <div>
+          <strong>Prix compétitifs</strong>
+          <span>Directement de l'usine</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       PRODUITS
+  ═══════════════════════════════════════════ -->
+  <section id="produits" class="section products-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Notre gamme</span>
+        <h2 class="section-title">Nos produits</h2>
+        <p class="section-desc">
+          Une sélection soigneuse de produits fabriqués en France,
+          conçus pour le confort et la durabilité.
+        </p>
+      </div>
+
+      <!-- Filtres catégories -->
+      <div class="product-filters reveal" role="tablist" aria-label="Filtrer les produits">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tous</button>
+        <button class="filter-btn" data-filter="coussin" role="tab" aria-selected="false">Coussins</button>
+        <button class="filter-btn" data-filter="mousse" role="tab" aria-selected="false">Mousses</button>
+        <button class="filter-btn" data-filter="oreiller" role="tab" aria-selected="false">Oreillers</button>
+        <button class="filter-btn" data-filter="mesure" role="tab" aria-selected="false">Sur mesure</button>
+      </div>
+
+      <!-- Grille produits -->
+      <div class="products-grid" id="products-grid">
+
+        <!-- ── Coussin salon marocain ── -->
+        <article class="product-card reveal" data-category="coussin">
+          <div class="product-img-wrap">
+            <!--
+              IMAGE : remplacez src par votre image
+              Taille recommandée : 600×500px
+            -->
+            <img
+              src="https://69d286c31362132535db2bbb.imgix.net/mousse-banquette-salon-marocain.jpg?w=600&h=600&ar=1100%3A1100&fit=crop"
+              alt="Coussin blanc pour salon marocain 85×65 cm"
+              loading="lazy"
+            />
+            <span class="product-badge">Best-seller</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Coussin salon marocain</span>
+            <h3>Coussin blanc sedari</h3>
+            <p> Enveloppe 100% polypropylène, rempli de flocons de mousse haute densité. Idéal pour habiller votre banquette.</p>
+            <div class="product-meta">
+              <span class="product-price">à partir de <strong>15,00 €</strong></span>
+              <a href="#contact" class="btn btn-outline btn-sm">Devis</a>
+            </div>
+          </div>
+        </article>
+
+
+
+        <!-- ── Mousse banquette sedari ── -->
+        <article class="product-card reveal" data-category="mousse">
+          <div class="product-img-wrap">
+            <img
+              src="https://69d286c31362132535db2bbb.imgix.net/76243168_1.jpg?w=600&h=600&ar=470%3A470&fit=crop"
+              alt="Mousse banquette salon marocain sur mesure"
+              loading="lazy"
+            />
+            <span class="product-badge">Garantie 5 ans</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Mousse banquette</span>
+            <h3>Mousse sedari </h3>
+            <p>Mousse polyéther haute densité 40 kg/m³. Très ferme, respirante, séchage rapide. 4 épaisseurs : 24, 30, 40, 50 cm. Livraison gratuite par lot de 2.</p>
+            <div class="product-meta">
+              <span class="product-price">à partir de <strong>99,00 €</strong></span>
+              <a href="#contact" class="btn btn-outline btn-sm">Devis</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Mousse floconnée ── -->
+        <article class="product-card reveal" data-category="mousse">
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+              alt="Sac de mousse floconnée polyéther 1kg – 50 litres"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Rembourrage en vrac</span>
+            <h3>Mousse floconnée 1 kg – 50 L</h3>
+            <p>Flocons de mousse polyéther haute densité. Pour rembourrer coussins, oreillers, poufs. Env. 250g pour un coussin 40×40 cm. Lavable en machine.</p>
+            <div class="product-meta">
+              <span class="product-price">à partir de <strong>8,55 €</strong></span>
+              <a href="#contact" class="btn btn-outline btn-sm">Devis</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Plaque de mousse ── -->
+        <article class="product-card reveal" data-category="mousse">
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&q=80"
+              alt="Plaque de mousse polyéther sur mesure"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Plaque de mousse</span>
+            <h3>Plaque polyéther </h3>
+            <p>Mousse haute résistance 25 kg/m³. Idéale pour la rénovation d'assises, chaises et ameublement. Découpe sur mesure disponible.</p>
+            <div class="product-meta">
+              <span class="product-price">à partir de <strong>18,90 €</strong></span>
+              <a href="#contact" class="btn btn-outline btn-sm">Devis</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Oreillers ── -->
+        <article class="product-card reveal" data-category="oreiller">
+          <div class="product-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80"
+              alt="Lot de 4 oreillers"
+              loading="lazy"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-category">Literie</span>
+            <h3>Oreillers & traversins</h3>
+            <p>Large gamme d'oreillers : grand confort, éco, anti-acariens, traversins latex. Fabriqués en belgique,            <a href="#accueil" class="logo" aria-label="Decodari – Retour en haut">
+              <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="44" height="44" rx="4" fill="#C41E3A"/>
+                <path d="M9 10h10c7.18 0 13 5.82 13 13s-5.82 13-13 13H9V10z" fill="white" opacity="0.9"/>
+                <circle cx="19" cy="23" r="5" fill="#C41E3A"/>
+                <rect x="28" y="14" width="7" height="18" rx="2" fill="white" opacity="0.9"/>
+              </svg>
+              <span class="logo-text">Decodari</span>
+            </a> lavables en machine à 30-40°.</p>
+            <div class="product-meta">
+              <span class="product-price">à partir de <strong>6,90 €</strong></span>
+              <a href="#contact" class="btn btn-outline btn-sm">Devis</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Sur mesure ── -->
+        <article class="product-card reveal product-card--featured" data-category="mesure">
+          <div class="product-img-wrap">
+            <img
+              src="https://69d286c31362132535db2bbb.imgix.net/test.png?w=1191&h=600&fit=crop"
+              alt="Découpe de mousse sur mesure"
+              loading="lazy"
+            />
+            <span class="product-badge">Personnalisable</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Sur mesure</span>
+            <h3>Mousse sur mesure à la découpe</h3>
+            <p>Découpe dans notre atelier selon vos croquis. Mousse polyéther 25 kg/m³ ou Bultex 35 kg/m³. Formes complexes possibles. -10% sur la 1ère commande.</p>
+            <div class="product-meta">
+            
+              <a href="#contact" class="btn btn-primary btn-sm">Contactez-nous</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /products-grid -->
+
+      <div class="products-cta reveal">
+        <p>Vous avez un besoin spécifique ? Nous fabriquons sur devis.</p>
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-paper-plane"></i> Demander un devis gratuit
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SECTION MISE EN AVANT SALON MAROCAIN
+  ═══════════════════════════════════════════ -->
+  <section class="feature-section" aria-label="Spécialiste salon marocain">
+    <div class="feature-pattern" aria-hidden="true"></div>
+    <div class="container feature-inner">
+      <div class="feature-text reveal">
+        <span class="section-label light">Notre spécialité</span>
+        <h2>Le salon marocain<br/>réinventé avec confort</h2>
+        <p>
+          Nous sommes spécialistes de la mousse et des coussins pour <strong>salon marocain</strong>
+          (sedari). Nos produits alliant l'esthétique orientale au confort contemporain vous
+          permettent de créer un espace chaleureux et personnalisé
+          .
+        </p>
+        <ul class="feature-list">
+          <li><i class="fa-solid fa-check"></i> Mousse très ferme pour une assise parfaite dans le temps</li>
+          <li><i class="fa-solid fa-check"></i> Coussins de maintien aux dimensions exactes de votre banquette</li>
+          <li><i class="fa-solid fa-check"></i> Garantie 5 ans sur les mousses sedari</li>
+          <li><i class="fa-solid fa-check"></i> Livraison gratuite par lot de 2 mousses</li>
+        </ul>
+        <a href="#contact" class="btn btn-white btn-lg">
+          <i class="fa-brands fa-whatsapp"></i> Nous contacter
+        </a>
+      </div>
+      <div class="feature-img reveal">
+        <!--
+          IMAGE : remplacez src par une photo de salon marocain
+          Taille recommandée : 700×600px
+        -->
+        <img
+          src="https://69d286c31362132535db2bbb.imgix.net/salon%20marocain.jpg?w=700&h=295&fit=crop"
+          alt="Salon marocain avec coussins Decodari"
+        />
+        <div class="feature-img-badge">
+          <i class="fa-solid fa-shield-check"></i>
+          <span>Garantie<br/><strong>5 ans</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ce que nous offrons</span>
+        <h2 class="section-title">Nos services</h2>
+        <p class="section-desc">
+          Plus qu'un simple fournisseur, nous sommes votre partenaire
+          pour un intérieur confortable et personnalisé.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h3>Fabrication sur mesure</h3>
+          <p>
+            Vous envoyez vos dimensions ou vos croquis, nous découpons et livrons.
+            Toutes formes possibles : rectangles, trapèzes, angles sur mesure.
+            Mousse polyéther 25 kg/m³ et Bultex 35 kg/m³ disponibles.
+          </p>
+          <a href="#contact" class="service-link">
+            Demander un devis <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3>Livraison rapide</h3>
+          <p>
+            Expédition en 3 à 5 jours ouvrés. Livraison gratuite par lot
+            de 2 mousses sedari. Transport assuré par des transporteurs
+            fiables pour une réception en parfait état.
+          </p>
+          <a href="#contact" class="service-link">
+            En savoir plus <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h3>Conseils personnalisés</h3>
+          <p>
+            Notre équipe vous guide dans le choix de la bonne mousse,
+            de la bonne épaisseur et du bon rembourrage pour votre projet.
+            Disponibles par téléphone et WhatsApp.
+          </p>
+          <a href="#contact" class="service-link">
+            Nous contacter <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <h3>Vente en gros</h3>
+          <p>
+            Revendeurs, grossistes, décorateurs d'intérieur — nous proposons
+            des tarifs préférentiels pour les commandes en grande quantité.
+            Contactez-nous pour un devis personnalisé.
+          </p>
+          <a href="#contact" class="service-link">
+            Tarifs grossistes <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       À PROPOS
+  ═══════════════════════════════════════════ -->
+  <section id="apropos" class="section about-section">
+    <div class="container about-inner">
+
+      <div class="about-img-wrap reveal">
+        <!--
+          IMAGE : remplacez src par une photo de votre atelier
+          Taille recommandée : 700×600px
+        -->
+        <img
+          src="https://69d286c31362132535db2bbb.imgix.net/Gemini_Generated_Image_cu8vs9cu8vs9cu8v.png?w=700&h=700&ar=2048%3A2048&fit=crop"
+          alt="Atelier Decodari – fabrication artisanale"
+          class="about-img-main"
+        />
+        <img
+          src="https://69d286c31362132535db2bbb.imgix.net/Gemini_Generated_Image_hce1l5hce1l5hce1.png?w=300&h=249&fit=crop"
+          alt="L'équipe Decodari"
+          class="about-img-secondary"
+        />
+        <div class="about-img-accent" aria-hidden="true">
+          <i class="fa-solid fa-factory"></i>
+          <span>Usine<br/>belge</span>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <span class="section-label">Notre histoire</span>
+        <h2>Qui sommes-nous ?</h2>
+        <p class="about-lead">
+          Decodari est une petite usine spécialisée dans la fabrication
+          de coussins et de mousse, implantée belge et au service
+          de votre confort depuis plus de 10 ans.
+        </p>
+        <p>
+          Nous maîtrisons l'ensemble de la chaîne de production : de la sélection
+          des matériaux haute densité jusqu'à la découpe précise et la livraison chez vous.
+          Notre savoir-faire artisanal, combiné à des équipements modernes, garantit
+          des produits de qualité à prix d'usine.
+        </p>
+        <p>
+          Spécialistes du salon marocain — aussi appelé <em>sedari</em> —,
+          nous fournissons particuliers, professionnels de l'aménagement
+          et revendeurs avec la même exigence de qualité.
+        </p>
+
+        <div class="about-values">
+          <div class="value-item">
+            <i class="fa-solid fa-gem"></i>
+            <div>
+              <strong>Qualité</strong>
+              <span>Matières premières sélectionnées</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-leaf"></i>
+            <div>
+              <strong>Durabilité</strong>
+              <span>Produits qui durent dans le temps</span>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fa-solid fa-handshake"></i>
+            <div>
+              <strong>Confiance</strong>
+              <span>Relation directe fabricant–client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       TÉMOIGNAGES
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials-section section" aria-label="Avis clients">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Ce qu'ils disent</span>
+        <h2 class="section-title">Avis clients</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <blockquote class="testimonial-card reveal">
+          <div class="stars" aria-label="5 étoiles">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>« Mousses reçues en parfait état, conformes aux dimensions commandées. Mon salon marocain est magnifique. Je recommande vivement ! »</p>
+          <footer><cite>Saad O. – Paris</cite></footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal">
+          <div class="stars" aria-label="5 étoiles">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>« Service impeccable, réponse rapide sur WhatsApp et qualité au rendez-vous. La mousse sedari est vraiment très ferme, exactement ce que je voulais. »</p>
+          <footer><cite>Abdelhakim A.. – Bruxelles</cite></footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal">
+          <div class="stars" aria-label="5 étoiles">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>« J'ai commandé des plaques sur mesure pour mon van. Découpe précise, délai respecté et prix vraiment compétitifs. Merci Decodari ! »</p>
+          <footer><cite>Thomas R. – Lille</cite></footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-inner">
+
+      <!-- Infos contact -->
+      <div class="contact-info reveal">
+        <span class="section-label">Parlons de votre projet</span>
+        <h2>Nous contacter</h2>
+        <p>Vous avez une question ou souhaitez un devis ? Contactez-nous directement.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Téléphone</strong>
+              <!--
+                ▼ REMPLACEZ le numéro par le vôtre
+              -->
+              <a href="tel:+32 493 92 93 93 ">+32 493 92 93 93 </a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <!--
+                ▼ REMPLACEZ le numéro WhatsApp par le vôtre (format international sans +)
+              -->
+              <a href="https://wa.me/+32493929393" target="_blank" rel="noopener">
+                Discuter sur WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <strong>Localisation</strong>
+              <!--
+                ▼ REMPLACEZ l'adresse par la vôtre
+              -->
+              <span>Rue de l'Indépendance 210, 1080 Molenbeek-Saint-Jean, Belgique</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <strong>Horaires</strong>
+              <span>Lun–Ven : 8h – 18h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bouton WhatsApp principal -->
+        <a
+          href="https://wa.me/32493929393?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%3A"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-whatsapp btn-lg"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Démarrer une discussion WhatsApp
+        </a>
+      </div>
+
+      <!-- Formulaire -->
+      <div class="contact-form-wrap reveal">
+        <form id="contact-form" class="contact-form" novalidate>
+          <h3>Envoyer un message</h3>
+
+          <div class="form-group">
+            <label for="name">Nom complet <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Mohammed Alaoui" required autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <select id="subject" name="subject">
+              <option value="">Choisissez un sujet</option>
+              <option value="coussin">Coussins salon marocain</option>
+              <option value="mousse">Mousse sur mesure</option>
+              <option value="oreiller">Oreillers</option>
+              <option value="gros">Commande en gros</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Votre message <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet (dimensions, quantités, délai…)" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-full">
+            <i class="fa-solid fa-paper-plane"></i>
+            Envoyer le message
+          </button>
+
+          <div id="form-success" class="form-success" role="alert" aria-live="polite" hidden>
+            <i class="fa-solid fa-circle-check"></i>
+            Merci ! Votre message a bien été envoyé. Nous vous répondrons très vite.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-pattern" aria-hidden="true"></div>
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <!-- Logo footer — même SVG que le header -->
+        <a href="#accueil" class="logo" aria-label="Decodari – Retour en haut">
+          <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="44" height="44" rx="4" fill="#C41E3A"/>
+            <path d="M9 10h10c7.18 0 13 5.82 13 13s-5.82 13-13 13H9V10z" fill="white" opacity="0.9"/>
+            <circle cx="19" cy="23" r="5" fill="#C41E3A"/>
+            <rect x="28" y="14" width="7" height="18" rx="2" fill="white" opacity="0.9"/>
+          </svg>
+          <span class="logo-text">Decodari</span>
+        </a>
+        <p>Fabricant belg de coussins et mousses pour salons marocains et usage domestique. Qualité, confort et sur mesure.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/32493929393" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#produits">Produits</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Produits</h4>
+        <ul>
+          <li><a href="#produits">Coussins salon marocain</a></li>
+          <li><a href="#produits">Mousse banquette sedari</a></li>
+          <li><a href="#produits">Mousse floconnée</a></li>
+          <li><a href="#produits">Plaques de mousse</a></li>
+          <li><a href="#produits">Oreillers</a></li>
+          <li><a href="#produits">Sur mesure</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+32 493 92 93 93 ">+32 493 92 93 93 </a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/33685483081" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p><i class="fa-solid fa-location-dot"></i> Rue de l'Indépendance 210, 1080 Molenbeek-Saint-Jean, Belgique</p>
+        <p><i class="fa-solid fa-clock"></i> Lun–Ven : 8h–18h</p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Decodari. Tous droits réservés.</p>
+        <p>Site réalisé avec ❤️ en Belgique</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════
+       BOUTON WHATSAPP FLOTTANT
+  ═══════════════════════════════════════════ -->
+  <!--
+    ▼ REMPLACEZ le numéro WhatsApp ci-dessous (format: 336XXXXXXXX)
+  -->
+  <a
+    href="https://wa.me/33685483081?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20vos%20produits."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contacter Decodari sur WhatsApp"
+    id="whatsapp-float"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Besoin d'aide ?</span>
+  </a>
+
+  <!-- Bouton retour en haut -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut de page">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
